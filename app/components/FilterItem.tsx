@@ -269,8 +269,14 @@ export default function FilterItem({
     );
   }
 
-  const selectValue =
-    isStringArray(value) || typeof value === "string" ? value : undefined;
+  // Asegurar que el valor sea siempre definido para el Select
+  const selectValue = (() => {
+    if (type === "multiple") {
+      return isStringArray(value) ? value : [];
+    }
+    return typeof value === "string" ? value : null;
+  })();
+
   const selectColor =
     !value || (isStringArray(value) && value.length === 0)
       ? "#9e9e9e"

@@ -9,7 +9,6 @@ import {
   Box,
   ModalClose,
 } from "@mui/joy";
-import { useTranslation } from "react-i18next";
 
 interface DeleteConfirmationModalProps {
   open: boolean;
@@ -20,7 +19,6 @@ interface DeleteConfirmationModalProps {
 export const DeleteConfirmationModal: React.FC<
   DeleteConfirmationModalProps
 > = ({ open, onCancel, onConfirm }) => {
-  const { t } = useTranslation();
   return (
     <Modal open={open} onClose={onCancel}>
       <ModalDialog
@@ -36,10 +34,10 @@ export const DeleteConfirmationModal: React.FC<
       >
         <ModalClose />
         <Typography level="title-lg" fontFamily="Montserrat-Bold" mb={1}>
-          {t("confirmDeleteGroup")}
+          Confirmation delete group
         </Typography>
         <Typography level="body-md" mb={3}>
-          {t("deleteAllPermissionsWarning")}
+          Delete permission warning
         </Typography>
         <Box display="flex" gap={2} justifyContent="center" width="100%">
           <Button
@@ -48,7 +46,7 @@ export const DeleteConfirmationModal: React.FC<
             onClick={onCancel}
             sx={{ minWidth: 120, width: "100%" }}
           >
-            {t("cancel")}
+            Cancel
           </Button>
           <Button
             variant="solid"

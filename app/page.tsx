@@ -522,7 +522,7 @@ export default function ExamplesPage() {
               DeleteConfirmationModal
             </Typography>
             <Typography level="body-sm" sx={{ mb: 2, color: "#656B6D" }}>
-              Modal específico para confirmación de eliminación con i18n
+              Modal específico para confirmación de eliminación
             </Typography>
             <Button
               color="danger"
