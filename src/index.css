@@ -1,0 +1,148 @@
+/* Fuentes personalizadas */
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('/fonts/Montserrat-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('/fonts/Montserrat-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Walkester';
+  src: url('/fonts/Walkester.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #232426;
+}
+
+/* Cursor pointer utility */
+.cursorPointer {
+  cursor: pointer;
+}
+
+/* Custom DatePicker Input Styles */
+.custom-datepicker-input {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-family: "Montserrat-Bold" !important;
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 2px solid #FB0C23;
+  border-radius: 12px;
+  appearance: none;
+  cursor: pointer;
+  background-color: white;
+  color: #232426;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.custom-datepicker-input::placeholder {
+  color: #9e9e9e;
+  font-family: "Montserrat-Bold";
+}
+
+.custom-datepicker-input:focus {
+  border-color: #FB0C23;
+  outline: none;
+}
+
+.custom-datepicker-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* React DatePicker Styles */
+.react-datepicker {
+  font-family: "Montserrat-Regular";
+  border: none !important;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  z-index: 9999;
+}
+
+.react-datepicker__header {
+  font-family: "Montserrat-Regular" !important;
+  background-color: white !important;
+  border-bottom: none !important;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  font-family: "Montserrat-Regular" !important;
+  margin: 5px !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 14px;
+  align-content: center !important;
+  color: #000000;
+}
+
+.react-datepicker__day:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50% !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: #FB0C23 !important;
+  color: white !important;
+  border-radius: 50% !important;
+}
+
+.react-datepicker__day--in-range {
+  background-color: #FD6C7A !important;
+  color: white !important;
+}
+
+.react-datepicker__day--in-selecting-range {
+  background-color: #FD9CA6 !important;
+  color: white !important;
+}
+
+.react-datepicker__current-month {
+  font-family: "Montserrat-Bold" !important;
+  color: #232426;
+}
+
+.react-datepicker__navigation {
+  top: 10px;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #232426;
+}
